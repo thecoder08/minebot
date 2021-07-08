@@ -132,7 +132,7 @@ minebot chat [message]: send [message] in the game chat.`);
     }
   }
 });
-client.login('ODYyMzM1NzI2MzQyNzY2NTky.YOW2ug.iYFkUYnVazggXYn1ovXzv8So1eA');
+client.login('token_goes_here');
 client.on('ready', function() {
   console.log('Logged in sucessfully, ready to accept messages on ' + client.user.tag);
   client.user.setActivity('Minecraft! You can too, by controlling Me! Use "minebot help" for help.');
