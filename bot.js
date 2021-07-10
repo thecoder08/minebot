@@ -39,10 +39,12 @@ minebot chat [message]: send [message] in the game chat.`);
           });
           bot.on('error', function(err) {
             msg.reply('Error connecting to server: ' + err);
+            bot.viewer.close();
             connected = false;
           });
           bot.on('kick', function(reason) {
             msg.reply('Kicked from server! Reason: ' + reason);
+            bot.viewer.close();
             connected = false;
           });
           bot.on('spawn', function() {
